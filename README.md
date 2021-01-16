@@ -1,5 +1,7 @@
 **目录**
 
+* [参考链接](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5)
+
 * [个人相关](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3)
   * [个人素质（HR面）](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E4%B8%AA%E4%BA%BA%E7%B4%A0%E8%B4%A8hr%E9%9D%A2)
   * [个人经历类](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E4%B8%AA%E4%BA%BA%E7%BB%8F%E5%8E%86%E7%B1%BB)
@@ -11,21 +13,21 @@
   * [计算机网络](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C)
   * [编程语言](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80)
   * [数据库](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E6%95%B0%E6%8D%AE%E5%BA%93)
-* 渗透测试
+* [渗透测试](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95)
   * web方向
-  * 内网
+  * [内网](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E5%86%85%E7%BD%91)
   * 工具
-* 企业安全相关
+* [企业安全相关](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E4%BC%81%E4%B8%9A%E5%AE%89%E5%85%A8%E7%9B%B8%E5%85%B3)
   * 等保
   * 安全基线
   * 应急响应
   * 红蓝对抗
-* 安全开发
-* 安全运营
+* [安全开发](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91)
+* [安全运营](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E5%AE%89%E5%85%A8%E8%BF%90%E8%90%A5)
   * 合规审计
   * 安全管理
   * 安全运维
-* 逆向
+* [逆向](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E9%80%86%E5%90%91)
 
 # 参考链接
 
@@ -1552,6 +1554,3 @@ webshell由于往往经过了编码和加密，会表现出一些特别的统计
       - VMP壳和Ollvm混淆 目前比较领先的加固方案。
   - dex文件的加载流程:
     - 见我的另外一篇分析文章。 从android源码看脱壳。 (https://tiaotiaolong.net/2019/07/05/从android源码看脱壳/)
-
-
-
