@@ -1,4 +1,31 @@
- 
+**目录**
+
+* [个人相关](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E4%B8%AA%E4%BA%BA%E7%9B%B8%E5%85%B3)
+  * [个人素质（HR面）](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E4%B8%AA%E4%BA%BA%E7%B4%A0%E8%B4%A8hr%E9%9D%A2)
+  * [个人经历类](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E4%B8%AA%E4%BA%BA%E7%BB%8F%E5%8E%86%E7%B1%BB)
+
+* [计算机基础](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80)
+  * 数据结构
+  * 操作系统
+  * 计算机组成原理
+  * [计算机网络](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C)
+  * [编程语言](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80)
+  * [数据库](https://github.com/DrenLea/sec_interview_know_list/blob/master/README.md#%E6%95%B0%E6%8D%AE%E5%BA%93)
+* 渗透测试
+  * web方向
+  * 内网
+  * 工具
+* 企业安全相关
+  * 等保
+  * 安全基线
+  * 应急响应
+  * 红蓝对抗
+* 安全开发
+* 安全运营
+  * 合规审计
+  * 安全管理
+  * 安全运维
+* 逆向
 
 # 参考链接
 
@@ -137,7 +164,7 @@ SYN标志位为表示请求连接，ACK表示确认
 
 #### OSI四层
 
-## 路由协议
+### 路由协议
 
 ### 你搭建过的最复杂的网络设备是什么
 
@@ -304,15 +331,17 @@ SYN标志位为表示请求连接，ACK表示确认
 
   索引是帮助MySQL高效获取数据的数据结构。MYISAM和InnoDB存储引擎只支持BTree索引；MEMORY和HEAP储存引擎可以支持HASH和BTREE索引。
 
-  
-
 - sqlserver public权限要如何提权
 
 - Windows、Linux、数据库的加固降权思路，任选其一
 
-# 渗透测试（Web方向）
+Redis主从命令执行攻击的原理。
 
-## 常见问题
+# 渗透测试
+
+## Web方向
+
+### 常见问题
 
 - 挑选两到四个不同方向常见和不常见的漏洞，就漏洞原理、利用方式和修复方案进行提问，然后根据回答的情况进行详细深入的二次提问
 
@@ -339,9 +368,9 @@ SYN标志位为表示请求连接，ACK表示确认
 - 假设某网站存在waf，不考虑正面绕过的前提下，应该如何绕过(分情况讨论 云waf/物理waf) (★)
 
 
-## **知识清单**
+### **知识清单**
 
-### **xss相关**
+#### **xss相关**
 
 - 利用
 
@@ -480,7 +509,7 @@ SYN标志位为表示请求连接，ACK表示确认
     - [防御XSS攻击的七条原则](http://www.freebuf.com/articles/web/9977.html)
     - [深入理解浏览器解析机制和XSS向量编码](https://www.cnblogs.com/b1gstar/p/5996549.html)
 
-### **XXE（外部实体注入）漏洞相关**
+#### **XXE（外部实体注入）漏洞相关**
 
 - XML文件格式
 
@@ -494,7 +523,7 @@ SYN标志位为表示请求连接，ACK表示确认
 
   XXE是XML外部实体注入攻击，XML中可以通过调用实体来请求本地或者远程内容，和远程文件保护类似，会引发相关安全问题，例如敏感文件读取。修复方式：XML解析库在调用时严格禁止对外部实体的解析。
 
-### ==**sql注入漏洞相关**==
+#### ==**sql注入漏洞相关**==
 
 - 如何判断sql注入，有哪些方法
 
@@ -655,7 +684,7 @@ SYN标志位为表示请求连接，ACK表示确认
 
 - `什么情况下Mybatis必须使用${},为什么只能使用${}。`
 
-### **CRLF注入**
+#### **CRLF注入**
 
 CRLF注入原理？
 
@@ -663,19 +692,19 @@ https://www.cnblogs.com/uestc2007/p/10880338.html
 
 > CRLF是回车+换行的简称。碰得比较少，基本没挖到过这种洞，简而言之一般是可以通过提交恶意数据里面包含回车，换行来达到控制服务器响应头的效果。碰到过潜在的CRLF都是提交回车和换行之后就500了。CRLF的利用可以是XSS，恶意重定向location，还有set-cookie.
 
-### LDAP注入
+#### LDAP注入
 
 ###### [LDAP概念和原理介绍](https://www.cnblogs.com/wilburxu/p/9174353.html)
 
 > http://www.4hou.com/technology/9090.html https://blog.csdn.net/quiet_girl/article/details/50716312
 
-### 文件上传
+#### 文件上传
 
 文件上传漏洞总结
 
 https://www.smi1e.top/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%E6%80%BB%E7%BB%93/
 
-### 文件包含
+#### 文件包含
 
 - 远程文件包含
 
@@ -701,11 +730,11 @@ https://www.smi1e.top/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%E6%
 
   
 
-### 任意文件下载
+#### 任意文件下载
 
 
 
-### **SSRF**
+#### **SSRF**
 
 - 说一个容易出现SSRF漏洞的场景
 
@@ -738,7 +767,7 @@ https://www.smi1e.top/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%E6%
 
   https://www.cnblogs.com/-mo-/p/11636051.html
 
-### CSRF
+#### CSRF
 
 - CSRF是什么？修复方式？
 
@@ -765,11 +794,11 @@ https://www.smi1e.top/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%E6%
 - token放在哪里？放在cookie里可以吗？不失效可以吗？
 - 如果后端没有session，那应该怎么防御。
 
-### 反序列化
+#### 反序列化
 
 
 
-### 逻辑漏洞
+#### 逻辑漏洞
 
 - 逻辑漏洞
 
@@ -787,7 +816,7 @@ https://www.smi1e.top/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%E6%
 
 - 越权问题如何检测？
 
-### **Waf绕过**
+#### **Waf绕过**
 
 - 绕过的本质是什么，是在寻找2个或者多个集合之间特性的差异。利用这些差异点进行绕过。
 - 架构层绕过WAF
@@ -805,7 +834,7 @@ https://www.smi1e.top/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%E6%
 
 - 
 
-### **DDOS防御相关**
+#### **DDOS防御相关**
 
 - DDOS攻击的类型
 
@@ -849,7 +878,7 @@ https://www.smi1e.top/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%E6%
     - 过滤不必要的服务和端口
     - 限制特定流量：检查访问来源做适当限制
 
-### **浏览器安全**
+#### **浏览器安全**
 
 - https协议握手过程
 
@@ -975,9 +1004,7 @@ https://www.smi1e.top/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E6%BC%8F%E6%B4%9E%E6%
 
   CORS是跨源资源分享（Cross-Origin Resource Sharing）的缩写。它是W3C标准，是跨源AJAX请求的根本解决方法。相比JSONP只能发GET请求，CORS允许任何类型的请求。 CORS请求大致和ajax请求，但是在头信息中加上了Origin字段表明请求来自哪个源。如果orgin是许可范围之内的话，服务器返回的响应会多出`Acess-Control-Allow-*`的字段
 
-### 漏洞组件相关
-
-Redis主从命令执行攻击的原理。
+#### 漏洞组件相关
 
 #### 中间件
 
@@ -1025,14 +1052,14 @@ thinkphphttps://blog.csdn.net/Blood_Pupil/article/details/88756949
 
 web框架漏洞总结http://www.voidcn.com/search/nvxybw
 
-### **认证**
+#### **认证**
 
 - OAUTH哪些地方容易出现安全问题
 - JWT的安全点在哪里
 
-### 渗透全流程
+#### 渗透全流程
 
-#### 渗透测试流程
+##### 渗透测试流程
 
 1. 项目访谈
 2. 信息收集：whois、网站源IP、旁站、C段网站、服务器系统版本、容器版本、程序版本、数据库类型、二级域名、防火墙、维护者信息
@@ -1109,15 +1136,23 @@ web框架漏洞总结http://www.voidcn.com/search/nvxybw
 >
 > 5)站长的误操作比如：网站备份的压缩文件、说明.txt、二级目录可能存放着其他站点
 
-### 就漏洞的检测发现进行提问
+#### 就漏洞的检测发现进行提问
 
 - 越权问题如何检测？
 - 黑盒如何检测XSS漏洞？
-- 如果爬取更多的请求？
+- 如何爬取更多的请求？
 
-# 渗透测试（内网）
+#### 信息采集
 
-## 常见问题
+- 踩点都要采集哪些信息？
+- DNS在渗透中的作用
+- 如何绕过CDN获取目标网站真实IP，谈谈你的思路？
+
+[绕过CDN寻找网站真实IP的方法汇总](
+
+## 内网
+
+### 常见问题
 
 - [psexec的底层实现原理是什么?](https://rcoil.me/2019/08/%E3%80%90%E7%9F%A5%E8%AF%86%E5%9B%9E%E9%A1%BE%E3%80%91%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3%20PsExec/) (★)
 - SSP接口中修复了哪个模块杜绝了mimikatz的恶意利用，具体是如何修复的？(★★)
@@ -1141,9 +1176,9 @@ web框架漏洞总结http://www.voidcn.com/search/nvxybw
 
 [内网渗透知识总结](https://www.anquanke.com/post/id/92646)
 
-# 渗透测试（工具）
+## 工具
 
-## web
+### web
 
 sql注入
 
@@ -1157,7 +1192,7 @@ sql注入
 
 中间件漏洞检测
 
-## 内网
+### 内网
 
 木马连接
 
@@ -1165,13 +1200,13 @@ sql注入
 
 ## ISO27000和等保(重点等保)
 
-### 说一下ISO27000
+### ISO27000
 
 ISO27000是国际知名的信息安全管理体系标准，适用于整个企业，不仅仅是IT部门，还包括业务部门、财务、人事等部门。引入信息安全管理体系就可以协调各个方面信息管理，从而使管理更为有效。保证信息安全不是仅有一个防火墙，或找一个24小时提供信息安全服务的公司就可以达到的。它需要全面的综合管理。
 
 PDCA（plan do check action）管理循环
 
-### 说一下等级保护制度
+### 等级保护制度
 
 《信息安全等级保护管理办法》是为规范信息安全等级保护管理，提高信息安全保障能力和水平，维护国家安全、社会稳定和公共利益，保障和促进信息化建设，根据《中华人民共和国计算机信息系统安全保护条例》等有关法律法规而制定的办法。
 
@@ -1187,14 +1222,14 @@ PDCA（plan do check action）管理循环
 
   **安全基线检查涉及操作系统、中间件、数据库、甚至是交换机等网络基础设备的检查，面对如此繁多的检查项，自动化的脚本可以帮助我们快速地完成基线检查的任务。一般来说基线检查基本上需要root权限，并且网上大部分的基线加固脚本都是脚本直接对系统进行操作，但是即使基线检查之前做了充分的备份和保存快照等，一旦有不可逆的操作导致生产系统的中断造成的影响是巨大的。**
 
-# **应急响应 or 红蓝对抗**
+## **应急响应 or 红蓝对抗**
 
 - php扩展门
 - pwnginx后门 如果机器存在这种门，该怎么发现它？
 - 自己纯手动搭建一次nginx,apache,tomcat。做到了解所有目录结构和配置文件。
 - apache的扩展后门都有哪些？可以自己动手搭建一下，那这种后门的缺点是什么？
 
-## 应急思考
+### 应急思考
 
 windows应急响应https://www.zybuluo.com/1kbfree/note/1477086
 
@@ -1207,7 +1242,7 @@ linux应急响应https://www.zybuluo.com/1kbfree/note/1476142
 - 新业务上线前可以从哪些方向进行安全评估？
 - 现有系统可以从哪些方向进行审计发现其中的安全风险？
 
-#### 主机被入侵
+### 主机被入侵
 
 1. 优先提取易消失的数据
    - 内存信息 `free -m` `htop
@@ -1218,13 +1253,7 @@ linux应急响应https://www.zybuluo.com/1kbfree/note/1476142
 4. 查看Linux系统日志 `/var/log`
 5. `ClamAV`杀毒软件
 
-## 信息采集
-
-- 踩点都要采集哪些信息？
-- DNS在渗透中的作用
-- 如何绕过CDN获取目标网站真实IP，谈谈你的思路？
-
-[绕过CDN寻找网站真实IP的方法汇总](https://zhuanlan.zhihu.com/p/33440472)
+https://zhuanlan.zhihu.com/p/33440472)
 
 # **安全开发**
 
@@ -1235,7 +1264,9 @@ linux应急响应https://www.zybuluo.com/1kbfree/note/1476142
 - 针对白盒代码审计，应该如何设计一个系统，静态的可以针对有问题的变量进行自动的回溯？
 - 接着上面的问题，有什么思路可以动态的回溯呢？
 
-# 安全运营（合规审计方向）
+# 安全运营
+
+## 合规审计方向
 
 - 对于内控、合规、审计的理解
   - 考察其对于要做的事情和岗位要求、公司环境是否匹配
@@ -1253,7 +1284,7 @@ linux应急响应https://www.zybuluo.com/1kbfree/note/1476142
 - 流程的设计
   - 挑选一些较为复杂的流程，比如转岗、离职等，如何设计考虑其中的细节
 
-# 安全架构（安全管理方向）
+## 安全管理方向
 
 - 渗透测试、安全研发、安全运营的问题可以挑选的问一些，以确保在各个方向上比较均衡
 - 对于企业不同时期、不同阶段、不同体量的安全建设的方法、区别以及侧重
@@ -1285,30 +1316,30 @@ linux应急响应https://www.zybuluo.com/1kbfree/note/1476142
 
 
 
-# 安全运维
+## 安全运维
 
-## windows
+### windows
 
-### 基线规范
+#### 基线规范
 
-### 木马查杀
+#### 木马查杀
 
 脱壳，反汇编
 
-### 计划任务
+#### 计划任务
 
 1. 控制面板-管理工具-计划任务，在“任务计划程序库”上右键--创建基本任务
 2. `schtasks`命令 语法: `schtasks /create /tn TaskName /tr TaskRun /sc schedule [/mo modifier] [/d day] [/m month[,month...] [/i IdleTime] [/st StartTime] [/sd StartDate] [/ed EndDate] [/scomputer [/u [domain]user /p password]] [/ru {[Domain]User | "System"} [/rpPassword]] /?`
 
-## linux
+### linux
 
-### 启动过程
+#### 启动过程
 
-### Linux基线规范
+#### Linux基线规范
 
 每个公司有每个公司的基线规范体系，但是答题分为下列五个方面
 
-#### 账号管理和授权
+##### 账号管理和授权
 
 - 检查特殊账号，是否存在空密码的账户和root权限账户
 - 禁用或删除无用账号
@@ -1316,7 +1347,7 @@ linux应急响应https://www.zybuluo.com/1kbfree/note/1476142
 - 禁止root远程登录，限制root用户直接登录。
 - 检查su权限。`vi /etc/pam.d/su`添加`auth required pam_wheel.so group=test`
 
-#### 服务
+##### 服务
 
 - 关闭不必要的服务
 - SSH服务安全
@@ -1324,17 +1355,17 @@ linux应急响应https://www.zybuluo.com/1kbfree/note/1476142
   - 修改SSH使用的协议版本为2
   - 修改允许密码错误次数（默认6次），`MaxAuthTries=3`
 
-#### 文件系统
+##### 文件系统
 
 - 设置umask值 `vi /etc/profile` 添加行 `umask 027`
 - 设置登录超时 `vi /etc/profile` 修改配置文件，将以 `TMOUT=` 开头的行注释，设置为 `TMOUT=180`
 
-#### 日志
+##### 日志
 
 - 启用syslogd日志，配置日志目录权限，或者设置日志服务器
 - 记录所有用户的登录和操作日志，通过脚本代码实现记录所有用户的登录操作日志，防止出现安全事件后无据可查。https://www.alibabacloud.com/help/zh/faq-detail/49809.htm
 
-#### IP协议安全要求
+##### IP协议安全要求
 
 - 远程登录取消telnet采用ssh
 - 设置/etc/hosts.allow和deny
@@ -1521,3 +1552,6 @@ webshell由于往往经过了编码和加密，会表现出一些特别的统计
       - VMP壳和Ollvm混淆 目前比较领先的加固方案。
   - dex文件的加载流程:
     - 见我的另外一篇分析文章。 从android源码看脱壳。 (https://tiaotiaolong.net/2019/07/05/从android源码看脱壳/)
+
+
+
